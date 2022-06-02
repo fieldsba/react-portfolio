@@ -26,20 +26,24 @@ function Nav() {
       <li>
         <span>Contact</span>
       </li>
-       {categories.map((category) => (
+      {categories.map((category) => (
         <li
-          className="mx-1"
-          key={category.name}
+            className="mx-1"
+            key={category.name}
         >
-          <span>
+            <span onClick={categorySelected} >
             {category.name}
-          </span>
+            </span>
         </li>
-      ))}
+        ))}
     </ul>
   </nav>
     </header>
   );
 }
+
+function categorySelected() {
+    console.log("Area under construction");
+  }
 
 export default Nav;
